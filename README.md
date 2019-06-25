@@ -114,12 +114,12 @@ python demo.py --arc=gan --lr_path=/path/to/one/image --save_dir=/path/to/save -
   </tr>
   <tr>
     <td colspan="2">RCAN-10</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>32.05</td>
+    <td>28.57</td>
+    <td>27.60</td>
+    <td>0.8920</td>
+    <td>0.7821</td>
+    <td>0.7360</td>
     <td>1.2986</td>
     <td>3h 27min</td>
   </tr>
