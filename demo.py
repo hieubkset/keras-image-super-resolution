@@ -80,7 +80,7 @@ def main():
 
     if args.default:
         lr_dirs = [os.path.join("./data/test/", dataset, "LR") for dataset in ["Set5", "Set14", "BSDS100"]]
-        save_dirs = [os.path.join("./output/", args.model_name, dataset) for dataset in ["Set5", "Set14", "BSDS100"]]
+        save_dirs = [os.path.join("./output/", args.arc, dataset) for dataset in ["Set5", "Set14", "BSDS100"]]
         for lr_dir, save_dir in zip(lr_dirs, save_dirs):
             sr_from_folder(model, lr_dir, save_dir, ".png")
     else:

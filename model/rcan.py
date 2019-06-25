@@ -2,6 +2,9 @@ import tensorflow as tf
 from tensorflow.keras.layers import Input, Conv2D, Activation, Add, Lambda, GlobalAveragePooling2D, Multiply, Dense, Reshape
 from tensorflow.keras.models import Model
 
+import sys
+sys.setrecursionlimit(10000)
+
 
 def sub_pixel_conv2d(scale=2, **kwargs):
     return Lambda(lambda x: tf.depth_to_space(x, scale), **kwargs)

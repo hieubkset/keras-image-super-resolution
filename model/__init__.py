@@ -14,6 +14,8 @@ def get_generator(model_arc, is_train=True):
         model = rcan.generator()
     elif model_arc == 'erca':
         model = erca.generator()
+    elif model_arc == 'gan':
+        model = srfeat.generator(is_train=is_train, use_bn=False)
     else:
         raise Exception('Wrong model architecture! It should be srfeat, argan, esrgan, edsr, rcan or erca.')
     return model

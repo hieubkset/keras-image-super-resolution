@@ -57,8 +57,120 @@ python demo.py --arc=[edsr, srgan, srfeat, rcan, esrgan, erca] --lr_path=/path/t
 ```
 python demo.py --arc=[edsr, srgan, srfeat, rcan, esrgan, erca] --lr_dir=/path/to/folder --ext=[.png, .jpg] --save_dir=/path/to/save --model_path=/path/to/model --cuda=0
 ```
+- To generate SR images using our gan-trained model, run the following command:
+```
+python demo.py --arc=gan --lr_path=/path/to/one/image --save_dir=/path/to/save --model_path=/path/to/model --cuda=0
+```
 ## Benchmark comparisions
 
+<table>
+  <tr>
+    <th colspan="2" rowspan="2">Model</th>
+    <th colspan="3">PSNR</th>
+    <th colspan="3">SSIM</th>
+    <th rowspan="2">Time per iteration</th>
+    <th rowspan="2">Time per epoch</th>
+  </tr>
+  <tr>
+    <td>Set5</td>
+    <td>Set14</td>
+    <td>BSDS100</td>
+    <td>Set5</td>
+    <td>Set14</td>
+    <td>BSDS100</td>
+  </tr>
+  <tr>
+    <td colspan="2">EDSR-10</td>
+    <td>32.01</td>
+    <td>28.56</td>
+    <td>27.54</td>
+    <td>0.8918</td>
+    <td>0.7819</td>
+    <td>0.7357</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td colspan="2">SRGAN-10</td>
+    <td>31.75</td>
+    <td>28.39</td>
+    <td>27.44</td>
+    <td>0.8864</td>
+    <td>0.7761</td>
+    <td>0.7308</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td colspan="2">ESRGAN-10</td>
+    <td>31.90</td>
+    <td>28.47</td>
+    <td>27.49</td>
+    <td>0.8898</td>
+    <td>0.7789</td>
+    <td>0.7340</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td colspan="2">RCAN-10</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td colspan="2">SRFeat-10</td>
+    <td>31.45</td>
+    <td>28.17</td>
+    <td>27.39</td>
+    <td>0.8813</td>
+    <td>0.7699</td>
+    <td>0.7245</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td colspan="2">Ours-10</td>
+    <td>32.14</td>
+    <td>28.60</td>
+    <td>27.58</td>
+    <td>0.8926</td>
+    <td>0.7823</td>
+    <td>0.7362</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td colspan="2">SRFeat-20</td>
+    <td>31.74</td>
+    <td>28.34</td>
+    <td>27.39</td>
+    <td>0.8859</td>
+    <td>0.7748</td>
+    <td>0.7298</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td colspan="2">Ours-20</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
 
+
+## Learning Curves
+![](/figs/learning_curves.png)
 
 I hope my instructions are clear enough for you. If you have any problem, you can contact me through hieubkset@gmail.com or use the issue tab. If you are insterested in this project, you are very welcome. Many Thanks.
