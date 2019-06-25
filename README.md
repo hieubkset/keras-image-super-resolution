@@ -158,12 +158,12 @@ python demo.py --arc=gan --lr_path=/path/to/one/image --save_dir=/path/to/save -
   </tr>
   <tr>
     <td colspan="2">Ours-20</td>
-    <td>32.25</td>
+    <td>32.21</td>
     <td>28.66</td>
-    <td>27.59</td>
-    <td>0.8940</td>
-    <td>0.7838</td>
-    <td>0.7372</td>
+    <td>27.60</td>
+    <td>0.8936</td>
+    <td>0.7836</td>
+    <td>0.7370</td>
     <td></td>
     <td></td>
   </tr>
