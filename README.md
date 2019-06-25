@@ -68,7 +68,7 @@ python demo.py --arc=gan --lr_path=/path/to/one/image --save_dir=/path/to/save -
     <th colspan="2" rowspan="2">Model</th>
     <th colspan="3">PSNR</th>
     <th colspan="3">SSIM</th>
-    <th rowspan="2">Time per iteration</th>
+    <th rowspan="2">Time per iteration<br>(s)</th>
     <th rowspan="2">Time per epoch</th>
   </tr>
   <tr>
@@ -87,8 +87,8 @@ python demo.py --arc=gan --lr_path=/path/to/one/image --save_dir=/path/to/save -
     <td>0.8918</td>
     <td>0.7819</td>
     <td>0.7357</td>
-    <td></td>
-    <td></td>
+    <td>0.3962</td>
+    <td>1h 3min</td>
   </tr>
   <tr>
     <td colspan="2">SRGAN-10</td>
@@ -98,8 +98,8 @@ python demo.py --arc=gan --lr_path=/path/to/one/image --save_dir=/path/to/save -
     <td>0.8864</td>
     <td>0.7761</td>
     <td>0.7308</td>
-    <td></td>
-    <td></td>
+    <td>0.3133</td>
+    <td>50 min</td>
   </tr>
   <tr>
     <td colspan="2">ESRGAN-10</td>
@@ -109,8 +109,8 @@ python demo.py --arc=gan --lr_path=/path/to/one/image --save_dir=/path/to/save -
     <td>0.8898</td>
     <td>0.7789</td>
     <td>0.7340</td>
-    <td></td>
-    <td></td>
+    <td>0.5265</td>
+    <td>1h 24min</td>
   </tr>
   <tr>
     <td colspan="2">RCAN-10</td>
@@ -120,8 +120,8 @@ python demo.py --arc=gan --lr_path=/path/to/one/image --save_dir=/path/to/save -
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
-    <td></td>
+    <td>1.2986</td>
+    <td>3h 27min</td>
   </tr>
   <tr>
     <td colspan="2">SRFeat-10</td>
@@ -131,8 +131,8 @@ python demo.py --arc=gan --lr_path=/path/to/one/image --save_dir=/path/to/save -
     <td>0.8813</td>
     <td>0.7699</td>
     <td>0.7245</td>
-    <td></td>
-    <td></td>
+    <td>0.5705</td>
+    <td>1h 31min</td>
   </tr>
   <tr>
     <td colspan="2">Ours-10</td>
@@ -142,8 +142,8 @@ python demo.py --arc=gan --lr_path=/path/to/one/image --save_dir=/path/to/save -
     <td>0.8926</td>
     <td>0.7823</td>
     <td>0.7362</td>
-    <td></td>
-    <td></td>
+    <td>0.5333</td>
+    <td>1h 25min</td>
   </tr>
   <tr>
     <td colspan="2">SRFeat-20</td>
@@ -158,12 +158,12 @@ python demo.py --arc=gan --lr_path=/path/to/one/image --save_dir=/path/to/save -
   </tr>
   <tr>
     <td colspan="2">Ours-20</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>32.25</td>
+    <td>28.66</td>
+    <td>27.59</td>
+    <td>0.8940</td>
+    <td>0.7838</td>
+    <td>0.7372</td>
     <td></td>
     <td></td>
   </tr>
