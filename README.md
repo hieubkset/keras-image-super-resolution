@@ -169,6 +169,13 @@ python demo.py --arc=gan --lr_path=/path/to/one/image --save_dir=/path/to/save -
   </tr>
 </table>
 
+Model-10: model after training 10 epochs.
+Model-20: model after training 20 epochs.
+
+We run all with batch size of 16 and about 9600 iteration per epoch. Running time is reported using a GPU Titan XP 16G. We also find that training on a GPU Titan X 16G is much slower, for example, RCAN takes about 2.5s per iteration.
+
+EDSR: in the paper, the author reported results of a model with 32 residual blocks and 256 features. The version here is one with 16 residual blocks and 128 filters.
+
 
 ## Learning Curves
 ![](/figs/learning_curves.png)
