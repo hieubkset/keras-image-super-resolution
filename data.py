@@ -36,7 +36,7 @@ def get_dataset(lr_path, hr_path, ext):
     lr_sorted_paths = get_sorted_image_path(lr_path, ext)
     hr_sorted_paths = get_sorted_image_path(hr_path, ext)
 
-    lr_hr_sorted_paths = list(zip(lr_sorted_paths[:100], hr_sorted_paths[:100]))
+    lr_hr_sorted_paths = list(zip(lr_sorted_paths[:], hr_sorted_paths[:]))
     random.shuffle(lr_hr_sorted_paths)
     lr_sorted_paths, hr_sorted_paths = zip(*lr_hr_sorted_paths)
 
