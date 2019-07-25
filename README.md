@@ -27,7 +27,22 @@ pip install -r requirements.txt
 ## Dataset
 I use DIV2K dataset ([link](https://data.vision.ee.ethz.ch/cvl/DIV2K/)) which consists of 800 HR training images and 100 HR validation images. To expand the volume of training data, I applied data augmentation method as SRFeat. The author provides augmentation code. You can find it [here](https://github.com/HyeongseokSon1/SRFeat/tree/master/data_augmentation).
 
-After applying agumentation, you shold see about 150 thousands of images for each folder (GT and LR_bicubic). 
+Actually, DIV2K dataset only contains high resolution images (HR images) and does not contains low resolution images (LR images).
+So to run the code, you have to generate LR images first. You can do it by using matlab scripts (https://github.com/hieubkset/Keras-Image-Super-Resolution/tree/master/data_preprocess).
+
+For training LR images, there are two scripts:
+- aug_data_div2k.m: generate LR images by using bicubic interpolation with scale 4.
+- aug_data_div2k_half.m: generate LR images by using bicubic interpolation with scale 2.
+
+If you run both scripts, you shold see about 150 thousands of images for each folder (GT and LR_bicubic).
+
+For testing LR images, using the script testset_bicubic_downsample.m
+
+These scripts will search all HR images from a HR folder, and then generate LR images to a LR folder.
+So you need to modify first lines of these scripts to your HR and LR folder.
+
+I'm sorry because it takes a little bit of time for completing this step.
+ 
 ## Training
 To pretrain a generator, run the following command
 ```
