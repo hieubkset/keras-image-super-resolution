@@ -40,8 +40,6 @@ For testing LR images, using the script testset_bicubic_downsample.m
 
 These scripts will search all HR images from a HR folder, and then generate LR images to a LR folder.
 So you need to modify first lines of these scripts to your HR and LR folder.
-
-I'm sorry because it takes a little bit of time for completing this step.
  
 ## Training
 To pretrain a generator, run the following command
