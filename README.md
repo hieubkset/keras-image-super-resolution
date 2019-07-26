@@ -5,7 +5,7 @@ This is a keras implementation of single super resolution algorithms: [EDSR](htt
 To run this project you need to setup the environment, download the dataset, run script to process data, and then you can train and test the network models. I will show you step by step to run this project and i hope it is clear enough.
 
 ## Prerequiste
-I tested my project in Corei7, 64G RAM, GPU Titan XP. Because it takes about several days for training, I recommend you using CPU/GPU strong enough and about 16 or 24G RAM.
+I tested my project in Corei7, 64G RAM, GPU Titan XP. Because it takes about several days for training, I recommend you using CPU/GPU strong enough and about 12G RAM.
 
 ## Environment
 I recommend you using virtualenv to create a virtual environments. You can install virtualenv (which is itself a pip package) via
