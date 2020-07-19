@@ -30,7 +30,7 @@ def rcab(input_tensor, filters, scale=0.1):
     x = Conv2D(filters=filters, kernel_size=3, strides=1, padding='same')(input_tensor)
     x = Activation('relu')(x)
     x = Conv2D(filters=filters, kernel_size=3, strides=1, padding='same')(x)
-    ca(x, filters)
+    x = ca(x, filters)
     if scale:
         x = Lambda(lambda t: t * scale)(x)
     x = Add()([x, input_tensor])
