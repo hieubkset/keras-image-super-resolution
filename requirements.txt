@@ -9,7 +9,7 @@ funcsigs==1.0.2
 gast==0.2.2
 grpcio==1.21.1
 h5py==2.9.0
-html5lib==0.9999999
+html5lib==0.999999999
 imageio==2.5.0
 Keras==2.1.6
 Keras-Applications==1.0.7
